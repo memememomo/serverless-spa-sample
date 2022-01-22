@@ -54,6 +54,7 @@ export default class MyStack extends sst.Stack {
         "GET /notes/{id}": "src/get.main",
         "PUT /notes/{id}": "src/update.main",
         "DELETE /notes/{id}": "src/delete.main",
+        "GET /hello": "src/hello.main",
       },
     });
     // LambdaがDynamoDBにアクセスできる権限の設定

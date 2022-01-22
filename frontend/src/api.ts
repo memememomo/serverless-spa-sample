@@ -1,5 +1,6 @@
 import {Auth} from "aws-amplify";
 import {Note} from '../../src/note';
+import {Hello} from "../../src/hello";
 
 // APIのエンドポイント
 const baseUrl = () => process.env.API_ENDPOINT;
@@ -89,3 +90,15 @@ export const updateNote = async (input: UpdateNoteInput) => {
 
 // UNIX時間からUTCフォーマットに文字列変換
 export const toUTC = (s: string): string => (new Date(s)).toUTCString();
+
+// Helloメッセージを取得する
+export const getHello = async (): Promise<Hello> => {
+  const h = await authHeader();
+  const res = await fetch(`${baseUrl()}/hello`, {
+    method: 'GET',
+    headers: {
+      ...h,
+    },
+  });
+  return res.json();
+};
