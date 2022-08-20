@@ -1,4 +1,4 @@
-import {AppBar, Button, Grid, Toolbar, Typography} from "@material-ui/core";
+import {AppBar, Button, Grid, Toolbar, Typography} from "@mui/material";
 import React from "react";
 import useSwr from "swr";
 import {Auth} from "aws-amplify";
@@ -26,7 +26,7 @@ const Header = () => {
     <header>
       <AppBar position="static">
         <Toolbar>
-          <Grid container spacing={1} justify="space-between">
+          <Grid container spacing={1} justifyContent="space-between">
             <Grid item>
               <Typography variant="h6">
                 Note&nbsp;

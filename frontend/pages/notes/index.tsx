@@ -15,7 +15,7 @@ import {
   TableContainer,
   TableHead,
   TableRow,
-} from "@material-ui/core";
+} from "@mui/material";
 import ErrorMessage from "../../components/error-message";
 import {handleError} from "../../src/error";
 

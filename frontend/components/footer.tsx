@@ -1,4 +1,4 @@
-import {Grid} from "@material-ui/core";
+import {Grid} from "@mui/material";
 
 // フッターのコンポーネント
 
@@ -10,7 +10,7 @@ type FooterProps = {
 // フッターのコンポーネント
 const Footer = (props: FooterProps) => {
   return (
-    <Grid container spacing={5} justify="center">
+    <Grid container spacing={5} justifyContent="center">
       <Grid item xs={12}></Grid>
       <Grid item>
         <footer>

@@ -3,7 +3,7 @@ import {
   Button,
   Grid,
   TextField
-} from "@material-ui/core";
+} from "@mui/material";
 import {useRouter} from "next/router";
 import {Note, NoteKey} from '../../src/note';
 import React from "react";
@@ -63,7 +63,7 @@ const NoteForm = (props: NoteProps) => {
     <>
       <h2 style={{ textAlign: 'center' }}>{props.title}</h2>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <Grid container justify="center" spacing={1}>
+        <Grid container justifyContent="center" spacing={1}>
           <Grid item xs={12}>
             <div style={{ textAlign: 'center' }}>
               <Controller

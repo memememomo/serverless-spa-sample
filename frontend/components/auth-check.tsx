@@ -30,7 +30,7 @@ const AuthCheck: React.FC<Props> = ({ children }) => {
   if (loading) return <div>Loading...</div>
 
   // ユーザー情報を取得できているかどうか
-  if (!user) {
+  if (!process.env.DISABLE_AUTH && !user) {
     // ログイン画面にリダイレクト
     router.replace('/login');
     return <div></div>

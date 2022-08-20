@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import {Note, NoteKey} from '../../../../src/note';
 import Layout from "../../../components/layout";
-import {Button, Grid, TextField} from "@material-ui/core";
+import {Button, Grid, TextField} from "@mui/material";
 import AuthCheck from "../../../components/auth-check";
 import {getNoteById, toUTC} from "../../../src/api";
 import {useEffect, useState} from "react";
