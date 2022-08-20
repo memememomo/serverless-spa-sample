@@ -74,7 +74,7 @@ const NoteForm = (props: NoteProps) => {
                     {...field}
                     aria-label="minimum height"
                     minRows={3}
-                    style={{width: 500}}
+                    style={{width: 500, margin: '10px'}}
                     defaultValue={note ? note.content : ''}
                     label="ノート"
                   />
@@ -94,7 +94,7 @@ const NoteForm = (props: NoteProps) => {
                               label={k}
                               defaultValue={k === 'createdAt' ? toUTC(note[k]) : note[k]}
                               disabled={true}
-                              style={{width: 500}}
+                              style={{width: 500, margin: '10px'}}
                             />
                           </div>
                         ))}
